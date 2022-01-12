@@ -29,7 +29,7 @@ public class MenuFrame extends JFrame {
         setSize(1024, 768);
         setResizable(false);
         menuBar();
-        labelIcon.setIcon(new ImageIcon(new ImageIcon("src/main/resources/menuLogo.png").getImage().getScaledInstance(600, 600, Image.SCALE_DEFAULT)));
+        labelIcon.setIcon(new ImageIcon(getClass().getResource("/menuLogo.png")));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
         setVisible(true);

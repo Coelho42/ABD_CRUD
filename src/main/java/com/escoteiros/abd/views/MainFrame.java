@@ -21,7 +21,7 @@ public class MainFrame extends JFrame {
         setContentPane(mainPanel);
         setTitle("Escoteiros");
         setSize(1024,768);
-        icon.setIcon(new ImageIcon("src/main/resources/mainFrameBg.png"));
+        icon.setIcon(new ImageIcon(getClass().getResource("/mainFrameBg.png")));
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);

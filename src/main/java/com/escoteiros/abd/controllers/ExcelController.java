@@ -2,6 +2,7 @@ package com.escoteiros.abd.controllers;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 import javax.swing.JTable;
 
@@ -72,8 +73,7 @@ public class ExcelController extends JTable {
             ItemCategories.allItemCategories = ItemCategoriesDB.getAllItemCategoriesDB();
             System.out.println("Categorias: Recebidas " + result);
 
-            String excelFilePath = "src/main/resources/Inventario_Material.xlsx";
-            FileInputStream inputStream = new FileInputStream(excelFilePath);
+            InputStream inputStream = ExcelController.class.getResourceAsStream("/Inventario_Material.xlsx");
             XSSFWorkbook workbook = new XSSFWorkbook(inputStream);
             int sheets = workbook.getNumberOfSheets();
 
