@@ -1,0 +1,3 @@
+
+1) Tu no relatorio dizes pontos 4a, 4c... Isso ta onde?
+2) o script ddl que mandaste, na procedure *addSubSections* como funcionam os parametros?

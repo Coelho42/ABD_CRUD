@@ -1,0 +1,21 @@
+
+
+Erros nas regras de negocio:
+    1) So podem existir 99 items, a partir desse e preciso resetar os dados na base de dados, pois guardamos os items em um sitio so.
+    2) Numero de secoes e limitado e subseccoes
+    3) No id do dicionario de dados, falta o auto increment
+    4) Na subsection, o id deveria ser unique
+
+
+Cursor: faz uma copia temporaria da table e depois retorna. (so existe na altura em que fizer o get, depois desaparcee)
+PROCEDURE vs FUNCTION -> function tem retorno e procedures nao.
+
+
+VER A CONVERSAO PARA DATE
+
+
+1240.40.399 (
+    1240: ID default do agrupamento,
+    40: 4 -> 4 id da seccao, 0 id da subseccao
+    399: 3-> categoria | 99: id do item
+)

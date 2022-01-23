@@ -2,10 +2,7 @@ package com.escoteiros.abd;
 
 import java.util.Locale;
 
-import com.escoteiros.abd.db.ItemCategoriesDB;
-import com.escoteiros.abd.db.ItemInspectionsDB;
-import com.escoteiros.abd.db.SectionsDB;
-import com.escoteiros.abd.db.SubSectionsDB;
+import com.escoteiros.abd.db.*;
 import com.escoteiros.abd.models.*;
 import com.escoteiros.abd.views.MainFrame;
 
@@ -20,13 +17,13 @@ public class Main {
 			// Apaga da DB
 			result = ItemInspectionsDB.deleteAllItemInspectionsDB();
 			System.out.println("Inspeções: Eliminadas " + result);
-			//        result = ItemInspectionsDB.resetIdDB();
+			result = ItemInspectionsDB.resetIdDB();
 			ItemInspections.dbLastId = 0;
 			System.out.println("Inspeções ids resetados" + result);
 
-			//        result = ItemDB.deleteAllItemsDB();
+			result = ItemDB.deleteAllItemsDB();
 			System.out.println("Items: Eliminados" + result);
-			//        result = ItemDB.resetIdDB();
+			result = ItemDB.resetIdDB();
 			Item.dbLastId = 0;
 			System.out.println("Item ids resetados" + result);
 
